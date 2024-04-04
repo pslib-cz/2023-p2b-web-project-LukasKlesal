@@ -5,12 +5,14 @@
 
 }
 *{
-	margin:0;
-	padding:0;
-	box-sizing: border-box;
-}
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
 
-.navbar p {
+  .navbar p {
     font-size: 45px;
     font-weight: 600;
   }
@@ -20,12 +22,17 @@
     justify-content: space-between;
     background-color: var(--dark-blue);
     padding: 8px;
-  }
-  
+}
+.logo{
+    color: var(--white);
+    font-size: 30px;
+    padding: 1em;
+}  
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 80px;
     width: 100%;
 }
   
@@ -38,15 +45,14 @@ menu {
     flex-direction: row;
     padding: 0em;
 }
-  
+
 menu li {
-    background-color: var(--grey);
-    padding: 0.25em 1em;
+    padding: 1em;
     border-radius: 1em;
-    margin: 0.5em;
     list-style: none;
     min-width: 5em;
-    text-align: center;
+    margin: 1em;
+    
 }
   
 menu a{
