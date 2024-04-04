@@ -4,6 +4,11 @@
     --white: #FFFF;
 
 }
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
 
 .navbar p {
     font-size: 45px;
@@ -124,15 +129,14 @@ body{
 .Containerfoto{
     display: grid;
     grid-template-columns: 1fr;
-    max-height: 800px
 }
 
 .figurefoto{
-    display: flex;
-    align-items: center;
-    border-radius: 2px;
-    border: 4px solid transparent;
-    max-height: 70%;
+    border-radius: 20px;
+    border: 3px solid transparent; 
+    margin: 20px;
+    margin: 40px;
+    padding: 5px;
 }
 .foto{
     border-radius: 30px; 
