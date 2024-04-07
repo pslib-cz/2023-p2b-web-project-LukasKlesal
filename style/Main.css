@@ -2,6 +2,7 @@
     --light-blue: #135E85;
     --dark-blue: #0B3A52;
     --white: #FFFF;
+    --grey: #666;
 
 }
 *{
@@ -10,12 +11,12 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-  }
+}
 
-  .navbar p {
+.navbar p {
     font-size: 45px;
     font-weight: 600;
-  }
+}
   
 .navbar {
     display: flex;
@@ -121,32 +122,34 @@ body{
     background-color: var(--light-blue);
     min-width: 400px;
 }
+.fotokontejner{
+    background-color: var(--dark-blue);
+    border-radius: 20px;
+    border: 3px solid transparent; 
+    margin: 30px;
+    margin: 40px;
+    padding: 5px;
+    }
+    
 
 
 .img--responzive {
     width: 100%;
     height: 100%;
-    display: block;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+}
+.vojak{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
 }
 
-
-
-.Containerfoto{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.figurefoto{
-    border-radius: 20px;
-    border: 3px solid transparent; 
-    margin: 20px;
-    margin: 40px;
-    padding: 5px;
-}
-.foto{
-    border-radius: 30px; 
-}
 
 .ContainerAbout{
     background-color: var(--dark-blue);
@@ -161,13 +164,13 @@ body{
     text-align: left;
     color: var(--white);   
     padding: 1%;
-    font-size: 40px;
+    font-size: 50px;
 }
 .CON--Info p{
     text-align: center;   
     color: var(--white);
     padding: 1%;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .container{
@@ -230,14 +233,73 @@ ul{
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
-    margin-bottom: 30px;
-}
+    margin-bottom: 30px;    
+    }   
+    .CON--Info p{
+        font-size: 0.8em;
+    }
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
 }
 }
+
+.ContainerProdukt{
+    width: 270px;
+    background-color: var(--white);
+    box-shadow: 2px 5px 15px 2px --grey;
+}
+
+.zbozi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img.produkt{
+    height: 180px;
+    width: auto
+}
+h3, p, h2{
+    text-align: center;
+    color: var(--white);
+}
+
+p{
+    margin-top: 10px;
+    padding: 0px 5px
+}
+
+h2.cena{
+    margin-top: 10px;
+    color: var(--white);
+}
+.box{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerProdukt{
+    background-color: var(--dark-blue); 
+    border-radius: 20px;
+    border: 3px solid transparent; 
+    min-width: 30%;
+}
+
+.Items{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    gap: 20%;
+    padding-left: 30%;
+}
+
 
 
 
