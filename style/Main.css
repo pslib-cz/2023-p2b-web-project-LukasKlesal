@@ -94,7 +94,7 @@ menu li {
 .hamburger span{
     height: var(--line);
     width: 100%;
-    background-color: #000;
+    background-color: var(--white);
     border-radius: calc(var(--line) / 2);
     transition: transform 1s, opacity 0.5s, translate 0s 0s;
     transform-origin: center;
@@ -129,16 +129,30 @@ body{
     justify-content: center;
 } 
 
-button {
+.kosik {
     border: none;
-    background-color: #135E85;
+    background-color: var(--light-blue);
     padding: 10px 15px;
-    color: #FFFF;
+    color: var(--white);
     border-radius: 6px;
     transition: 0.2s;
 }
 
-button:hover {
+.kosik:hover {
+    box-shadow: 0 0 0 4px #FFFF,
+    0 0 0 8px #135E85;
+}
+
+.tlacitko{
+    border: none;
+    background-color: var(--dark-blue);
+    padding: 15px 20px;
+    color: var(--white);
+    border-radius: 6px;
+    transition: 0.2s;
+    font-size: 25px;
+}
+.tlacitko:hover {
     box-shadow: 0 0 0 4px #FFFF,
     0 0 0 8px #135E85;
 }
@@ -146,10 +160,10 @@ button:hover {
 .img--responzive {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
 }
 .vojak{
     width: 100%;
@@ -321,6 +335,37 @@ h2.cena{
     color: var(--white);
 }
 
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.img--gallery {
+    aspect-ratio: 1 / 1;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+@media only screen and (min-width: 750px)
+{
+.GRI--gallerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 40px;
+    gap: 20px;
+}
+}
 
 
 
