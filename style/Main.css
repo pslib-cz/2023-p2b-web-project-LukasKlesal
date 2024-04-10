@@ -3,7 +3,6 @@
     --dark-blue: #0B3A52;
     --white: #FFFF;
     --grey: #666;
-
 }
 
 .navbar p {
@@ -17,11 +16,13 @@
     background-color: var(--dark-blue);
     padding: 8px;
 }
+
 .logo{
     color: var(--white);
     font-size: 30px;
     padding: 1em;
-}  
+} 
+
 .nav{
     display: flex;
     justify-content: space-between;
@@ -60,54 +61,54 @@ a {
   
 @media screen and (max-width: 768px) {
     .navbar {
-    display: block;
-    padding: 0.5em;
+        display: block;
+        padding: 0.5em;
 }
   
-menu li {
-    width: 50%;
+    menu li {
+        width: 50%;
 }
   
-.menu-toggle {
-    display: none;
+    .menu-toggle {
+        display: none;
 }
   
-.navbar:has(.checkbox:checked) .menu-toggle{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .navbar:has(.checkbox:checked) .menu-toggle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
   
-.checkbox{
-    display: none;
+    .checkbox{
+        display: none;
 }
   
-.hamburger{
-    --line: 8px;
-    display: block;
-    width: 40px;
-    aspect-ratio: 1/1;
-    display: flex;
-    flex-direction: column;
-    gap: var(--line);
+    .hamburger{
+        --line: 8px;
+        display: block;
+        width: 40px;
+        aspect-ratio: 1/1;
+        display: flex;
+        flex-direction: column;
+        gap: var(--line);
 }
-.hamburger span{
-    height: var(--line);
-    width: 100%;
-    background-color: var(--white);
-    border-radius: calc(var(--line) / 2);
-    transition: transform 1s, opacity 0.5s, translate 0s 0s;
-    transform-origin: center;
+    .hamburger span{
+        height: var(--line);
+        width: 100%;
+        background-color: var(--white);
+        border-radius: calc(var(--line) / 2);
+        transition: transform 1s, opacity 0.5s, translate 0s 0s;
+        transform-origin: center;
 }
   
-.navbar:has(.checkbox:checked) .hamburger span:nth-of-type(1) {
-    transform: translateY(200%) rotate(45deg);
+    .navbar:has(.checkbox:checked) .hamburger span:nth-of-type(1) {
+        transform: translateY(200%) rotate(45deg);
 }
-.navbar:has(.checkbox:checked) .hamburger span:nth-of-type(2) {
-    opacity: 0;
+    .navbar:has(.checkbox:checked) .hamburger span:nth-of-type(2) {
+        opacity: 0;
 }
-.navbar:has(.checkbox:checked) .hamburger span:nth-of-type(3) {
-    transform: translateY(-200%) rotate(-45deg);
+    .navbar:has(.checkbox:checked) .hamburger span:nth-of-type(3) {
+        transform: translateY(-200%) rotate(-45deg);
 }
 }
 
@@ -157,7 +158,7 @@ body{
     0 0 0 8px #135E85;
 }
 
-.img--responzive {
+.img-responzive {
     width: 100%;
     height: 100%;
     display: block;
@@ -184,13 +185,13 @@ body{
     padding: 5px;
 }
 
-.CON--Info h1{
+.Informace h1{
     text-align: left;
     color: var(--white);   
     padding: 1%;
     font-size: 50px;
 }
-.CON--Info p{
+.Informace p{
     text-align: center;   
     color: var(--white);
     padding: 1%;
@@ -254,7 +255,6 @@ ul li a:hover{
     background-color: white;
 }
 
-/*responsive*/
 @media(max-width: 740px){
     .footer-col{
     width: 50%;
@@ -263,7 +263,7 @@ ul li a:hover{
     .footer-col h4::before{
         all: unset;
     }   
-    .CON--Info p{
+    .Informace p{
         font-size: 0.8em;
     }
     .Items {
@@ -335,93 +335,31 @@ h2.cena{
     color: var(--white);
 }
 
-/* Globální styly galerie */
-.swiper {
-    height: 90vh;
-  }
-  
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Styly pro jednotlivé obrázky */
-  .swiper-karta {
-    border-radius: 0.625em;
-    border: 0.063em solid var(--grey);
-    margin: 0.5em;
-    width: 15vw;
-    max-width: 300px;
-    text-align: center;
-  }
-  
-  .swiper-karta img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    object-fit: cover;
-    border-radius: inherit;
-  }
-  
-  .piti img{
-    height: 40vh;
-    object-fit: contain;
-  }
-  
-  .swiper-karta p {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .swiper-karta {
-      margin: 1em;
-      width: 90%;
-    }
-    .piti img{
-      height: 80vh;
-    }
-  }
-
-  
-/*@media only screen and (min-width: 750px)
-{
-    .GRI--gallerie {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 40px;
-        gap: 20px;
-    }
-}*/
-
-
-
-
-  .contact-section{
+.contact-section{
     background-size: cover;
     padding: 40px 0;
-  }
-  .contact-section h1{
+}
+
+.contact-section h1{
     text-align: center;
     color: #ddd;
-  }
-  .border{
-    width: 200px;
+}
+
+.border{
+    width: 250px;
     height: 10px;
     background: var(--dark-blue);
-    margin: 30px auto;
-  }
+    margin: 20px auto;
+}
   
-  .contact-form{
+.contact-form{
     max-width: 600px;
     margin: auto;
     padding: 0 10px;
     overflow: hidden;
-  }
+}
   
-  .contact-form-text{
+.contact-form-text{
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -430,31 +368,30 @@ h2.cena{
     background: var(--dark-blue);
     padding: 20px 40px;
     outline: none;
-    color: #ddd;
-    transition: 0.5s;
-  }
-  .contact-form-text:focus{
+    color: var(--white);
+}
+
+.contact-form-text:focus{
     box-shadow: 0 0 10px 4px #34495e;
-  }
-  textarea.contact-form-text{
+}
+
+textarea.contact-form-text{
     resize: none;
     height: 120px;
-  }
-  .contact-form-btn{
+}
+
+.contact-form-btn{
     float: right;
     border: 0;
-    background: #34495e;
-    color: #fff;
+    background: var(--dark-blue);
+    color: var(--white);
     padding: 12px 50px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
   }
-  .contact-form-btn:hover{
-    background: #2980b9;
-  }
   
-  .gallery {
+.gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: .5rem;
