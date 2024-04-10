@@ -264,7 +264,7 @@ ul li a:hover{
         all: unset;
     }   
     .Informace p{
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .Items {
         display: flex;
@@ -285,11 +285,17 @@ ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 img.produkt{
     height: 180px;
     width: auto
 }
+
+img.img-responzive{
+    border-radius: 10px;
+}
+
 h3, p, h2{
     text-align: center;
     color: var(--white);
