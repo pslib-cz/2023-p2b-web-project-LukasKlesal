@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>AirsoftBro</title>
 </head>
 <body>
@@ -30,28 +31,45 @@
         </nav>
     </header>
     <main>
-        <div class="GRI--gallerie">
-            <figure class="img--gallery">
-                <img class="img--responzive img--borderradius " src="./Galerie/1.jpg" alt="fotka z galerie 1" >
-            </figure>
-            <figure class="img--gallery">
-                <img class="img--responzive img--borderradius " src="./Galerie/2.jpg" alt="fotka z galerie 2" >
-            </figure>
-            <figure class="img--gallery">
-                <img class="img--responzive img--borderradius " src="./Galerie/3.jpg" alt="fotka z galerie 3" >
-            </figure>
-            <figure class="img--gallery">
-                <img class="img--responzive img--borderradius " src="./Galerie/4.jpg" alt="fotka z galerie 4" >
-            </figure>
-            <figure class="img--gallery">
-                <img class="img--responzive img--borderradius " src="./Galerie/5.jpg" alt="fotka z galerie 5" >
-            </figure>
-            <figure class="img--gallery">
-                <img class="img--responzive img--borderradius " src="./Galerie/6.jpg" alt="fotka z galerie 6" >
-            </figure>
-            <figure class="img--gallery">
-                <img class="img--responzive img--borderradius " src="./Galerie/7.jpg" alt="fotka z galerie 7" >
-            </figure>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-karta piti">
+                        <img src="./Galerie/1.jpg" alt="obrazek1" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-karta piti">
+                        <img src="./Galerie/2.jpg" alt="obrazek2" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-karta piti">
+                        <img src="./Galerie/3.jpg" alt="obrazek3" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-karta piti">
+                        <img src="./Galerie/4.jpg" alt="obrazek4" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-karta piti">
+                        <img src="./Galerie/5.jpg"alt="obrazek5"/>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-karta piti">
+                        <img src="./Galerie/6.jpg" alt="obrazek6" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-karta piti">
+                        <img src="./Galerie/7.jpg" alt="obrazek7" />
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </main>
     <footer>
@@ -86,6 +104,30 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-    </footer>    
+    </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            grid: {
+              rows: 2,
+            },
+          },
+        },
+      });
+    </script>  
 </body>
 </html>
