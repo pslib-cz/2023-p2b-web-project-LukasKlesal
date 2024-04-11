@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/Main.css">
+   
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="icon" type="image/svg" href="./icons/pizza_logo-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>AirsoftBro</title>
 </head>
 <body>
@@ -29,9 +31,19 @@
                 <li><a href="dotaznik.html">Kontakt</a></li>
             </menu>
         </nav>
-        <div class="fotokontejner">
-            <img class="vojak" src="./Galerie/soldier-destruction-army-4k-ev.jpg" alt="">
-        </div>
+        <div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img class="vojak" src="./Galerie/soldier-destruction-army-4k-ev.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="vojak" src="./Galerie/soldier-destruction-army-4k-ev.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>   
     </header>
     <main>
         <div class="ContainerAbout Informace">
@@ -119,7 +131,16 @@
                 <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-    </footer>    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            pagination: {
+            el: ".swiper-pagination",
+          },
+        });
+    </script>    
 </body>
 </html>
 
