@@ -121,17 +121,13 @@ body{
 .swiper-wrapper{
     gap: 0.3em;
 }
-.swiper-slide{
+
+.swiper-slide {
     background-color: var(--dark-blue);
     border-radius: 20px;
-    border: 3px solid transparent; 
-    margin: 40px;
-    width: 95% !important;
-    padding: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+    border: 3px solid transparent;
+    box-sizing: border-box;
+}
 
 .dalsi {
     display: flex;
