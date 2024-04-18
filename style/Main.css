@@ -4,6 +4,10 @@
     --white: #FFFF;
     --grey: #666;
 }
+.swiper{
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
 .navbar p {
     font-size: 45px;
@@ -118,6 +122,7 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 .swiper-wrapper{
     gap: 0.3em;
 }
@@ -185,7 +190,8 @@ body{
     border-radius: 20px;
     border: 3px solid transparent; 
     margin: 20px;
-    margin: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 5px;
 }
 
@@ -199,7 +205,7 @@ body{
     text-align: center;   
     color: var(--white);
     padding: 1%;
-    font-size: 40px;
+    font-size: 18px;
 }
 
 footer{
